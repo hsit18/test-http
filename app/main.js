@@ -295,7 +295,7 @@ var FlightService = /** @class */ (function () {
         //     this.resultsSource.next(res.response);
         //     return res.response;
         //   }))
-        this.http.get(requestUrl).subscribe(function (data) {
+        this.http.get(requestUrl, httpOptions).subscribe(function (data) {
             _this.resultsSource.next(data['data']);
         });
     };
