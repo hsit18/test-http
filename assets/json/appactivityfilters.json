@@ -1,0 +1,397 @@
+[{
+    "name": "month",
+    "values": [{
+        "id": "Feb-2019",
+        "value": "February 2019"
+    }, {
+        "id": "Jan-2019",
+        "value": "January 2019"
+    }, {
+        "id": "Dec-2018",
+        "value": "December 2018"
+    }, {
+        "id": "Nov-2018",
+        "value": "November 2018"
+    }, {
+        "id": "Oct-2018",
+        "value": "October 2018"
+    }, {
+        "id": "Sep-2018",
+        "value": "September 2018"
+    }, {
+        "id": "Aug-2018",
+        "value": "August 2018"
+    }, {
+        "id": "Jul-2018",
+        "value": "July 2018"
+    }, {
+        "id": "Jun-2018",
+        "value": "June 2018"
+    }, {
+        "id": "May-2018",
+        "value": "May 2018"
+    }, {
+        "id": "Apr-2018",
+        "value": "April 2018"
+    }, {
+        "id": "Mar-2018",
+        "value": "March 2018"
+    }]
+}, {
+    "name": "crops",
+    "values": [{
+        "id": "Coriander",
+        "value": "CORIANDER"
+    }, {
+        "id": "Guava",
+        "value": "GUAVA"
+    }, {
+        "id": "Ginger",
+        "value": "GINGER"
+    }, {
+        "id": "Garlic",
+        "value": "GARLIC"
+    }, {
+        "id": "Gold Treatment",
+        "value": "GOLD TREATMENT"
+    }, {
+        "id": "Rose",
+        "value": "ROSE"
+    }, {
+        "id": "Sweet Corn",
+        "value": "SWEET CORN"
+    }, {
+        "id": "Maize",
+        "value": "MAIZE"
+    }, {
+        "id": "Mango",
+        "value": "MANGO"
+    }, {
+        "id": "Drumstick",
+        "value": "DRUMSTICK"
+    }, {
+        "id": "Banana",
+        "value": "BANANA"
+    }, {
+        "id": "Okra",
+        "value": "OKRA"
+    }, {
+        "id": "Muskmelon",
+        "value": "MUSKMELON"
+    }, {
+        "id": "Papaya",
+        "value": "PAPAYA"
+    }, {
+        "id": "Capsicum",
+        "value": "CAPSICUM"
+    }, {
+        "id": "Grapes",
+        "value": "GRAPES"
+    }, {
+        "id": "Cucurbitaceae",
+        "value": "CUCURBITACEAE"
+    }, {
+        "id": "Pearl Millet",
+        "value": "PEARL MILLET"
+    }, {
+        "id": "Solar",
+        "value": "SOLAR"
+    }, {
+        "id": "Tissue Culture",
+        "value": "TISSUE CULTURE"
+    }, {
+        "id": "Green Gram",
+        "value": "GREEN GRAM"
+    }, {
+        "id": "Sugarcane",
+        "value": "SUGARCANE"
+    }, {
+        "id": "Tomato",
+        "value": "TOMATO"
+    }, {
+        "id": "Ridge Gourd",
+        "value": "RIDGE GOURD"
+    }, {
+        "id": "Watermelon",
+        "value": "WATERMELON"
+    }, {
+        "id": "Fennel",
+        "value": "FENNEL"
+    }, {
+        "id": "Animal husbandry",
+        "value": "ANIMAL HUSBANDRY"
+    }, {
+        "id": "Chilli",
+        "value": "CHILLI"
+    }, {
+        "id": "Video",
+        "value": "VIDEO"
+    }, {
+        "id": "Apple Ber",
+        "value": "APPLE BER"
+    }, {
+        "id": "Pomegranate",
+        "value": "POMEGRANATE"
+    }, {
+        "id": "Coconut",
+        "value": "COCONUT"
+    }, {
+        "id": "Potato",
+        "value": "POTATO"
+    }, {
+        "id": "Cabbage",
+        "value": "CABBAGE"
+    }, {
+        "id": "Pigeon Pea",
+        "value": "PIGEON PEA"
+    }, {
+        "id": "Vegetable Crops",
+        "value": "VEGETABLE CROPS"
+    }, {
+        "id": "Marigold",
+        "value": "MARIGOLD"
+    }, {
+        "id": "Wheat",
+        "value": "WHEAT"
+    }, {
+        "id": "Cucumber",
+        "value": "CUCUMBER"
+    }, {
+        "id": "Fenugreek",
+        "value": "FENUGREEK"
+    }, {
+        "id": "Ganesh Chaturthi",
+        "value": "GANESH CHATURTHI"
+    }, {
+        "id": "Sweet Lime",
+        "value": "SWEET LIME"
+    }, {
+        "id": "Vegetable Guar",
+        "value": "VEGETABLE GUAR"
+    }, {
+        "id": "AgroStar delivery",
+        "value": "AGROSTAR DELIVERY"
+    }, {
+        "id": "Jowar",
+        "value": "JOWAR"
+    }, {
+        "id": "Sapling",
+        "value": "SAPLING"
+    }, {
+        "id": "Diwali",
+        "value": "DIWALI"
+    }, {
+        "id": "Oil Seeds",
+        "value": "OIL SEEDS"
+    }, {
+        "id": "Dussehra",
+        "value": "DUSSEHRA"
+    }, {
+        "id": "Rakhi",
+        "value": "RAKHI"
+    }, {
+        "id": "Navratri",
+        "value": "NAVRATRI"
+    }, {
+        "id": "Paddy",
+        "value": "PADDY"
+    }, {
+        "id": "Cumin",
+        "value": "CUMIN"
+    }, {
+        "id": "Soyabean",
+        "value": "SOYABEAN"
+    }, {
+        "id": "Castor",
+        "value": "CASTOR"
+    }, {
+        "id": "Seeds",
+        "value": "SEEDS"
+    }, {
+        "id": "Urid Bean",
+        "value": "URID BEAN"
+    }, {
+        "id": "Bengal Gram",
+        "value": "BENGAL GRAM"
+    }, {
+        "id": "Bitter Gourd",
+        "value": "BITTER GOURD"
+    }, {
+        "id": "Gram",
+        "value": "GRAM"
+    }, {
+        "id": "Onion",
+        "value": "ONION"
+    }, {
+        "id": "Cotton",
+        "value": "COTTON"
+    }, {
+        "id": "Brinjal",
+        "value": "BRINJAL"
+    }, {
+        "id": "Republic Day",
+        "value": "REPUBLIC DAY"
+    }, {
+        "id": "Sesame",
+        "value": "SESAME"
+    }, {
+        "id": "Lemon",
+        "value": "LEMON"
+    }, {
+        "id": "Gum Guar",
+        "value": "GUM GUAR"
+    }, {
+        "id": "Turmeric",
+        "value": "TURMERIC"
+    }, {
+        "id": "Custard Apple",
+        "value": "CUSTARD APPLE"
+    }, {
+        "id": "Orange",
+        "value": "ORANGE"
+    }, {
+        "id": "Mustard",
+        "value": "MUSTARD"
+    }, {
+        "id": "Makar Sankranti",
+        "value": "MAKAR SANKRANTI"
+    }, {
+        "id": "Cauliflower",
+        "value": "CAULIFLOWER"
+    }, {
+        "id": "Other",
+        "value": "OTHER"
+    }, {
+        "id": "Drip Irrigation",
+        "value": "DRIP IRRIGATION"
+    }, {
+        "id": "Cowpea",
+        "value": "COWPEA"
+    }, {
+        "id": "Groundnut",
+        "value": "GROUNDNUT"
+    }, {
+        "id": "Fig",
+        "value": "FIG"
+    }, {
+        "id": "Tuberose",
+        "value": "TUBEROSE"
+    }, {
+        "id": "Bottle Gourd",
+        "value": "BOTTLE GOURD"
+    }, {
+        "id": "Fruits",
+        "value": "FRUITS"
+    }]
+}, {
+    "name": "region",
+    "values": [{
+        "id": "DL",
+        "value": "Delhi"
+    }, {
+        "id": "PY",
+        "value": "Pondicherry"
+    }, {
+        "id": "ML",
+        "value": "Meghalaya"
+    }, {
+        "id": "UK",
+        "value": "Uttarakhand"
+    }, {
+        "id": "WB",
+        "value": "West Bengal"
+    }, {
+        "id": "UP",
+        "value": "Uttar Pradesh"
+    }, {
+        "id": "MH",
+        "value": "Maharashtra"
+    }, {
+        "id": "BR",
+        "value": "Bihar"
+    }, {
+        "id": "MZ",
+        "value": "Mizoram"
+    }, {
+        "id": "DD",
+        "value": "Daman and Diu"
+    }, {
+        "id": "MP",
+        "value": "Madhya Pradesh"
+    }, {
+        "id": "AP",
+        "value": "Andhra Pradesh"
+    }, {
+        "id": "KA",
+        "value": "Karnataka"
+    }, {
+        "id": "SK",
+        "value": "Sikkim"
+    }, {
+        "id": "TN",
+        "value": "Tamil Nadu"
+    }, {
+        "id": "LD",
+        "value": "Lakshadweep"
+    }, {
+        "id": "TL",
+        "value": "Telangana"
+    }, {
+        "id": "AS",
+        "value": "Assam"
+    }, {
+        "id": "CG",
+        "value": "Chhattisgarh"
+    }, {
+        "id": "HP",
+        "value": "Himachal Pradesh"
+    }, {
+        "id": "PB",
+        "value": "Punjab"
+    }, {
+        "id": "DH",
+        "value": "Dadra and Nagar Haveli"
+    }, {
+        "id": "AR",
+        "value": "Arunachal Pradesh"
+    }, {
+        "id": "JK",
+        "value": "Jammu and Kashmir"
+    }, {
+        "id": "KL",
+        "value": "Kerala"
+    }, {
+        "id": "GA",
+        "value": "Goa"
+    }, {
+        "id": "JH",
+        "value": "Jharkhand"
+    }, {
+        "id": "NL",
+        "value": "Nagaland"
+    }, {
+        "id": "TR",
+        "value": "Tripura"
+    }, {
+        "id": "RJ",
+        "value": "Rajasthan"
+    }, {
+        "id": "HR",
+        "value": "Haryana"
+    }, {
+        "id": "GJ",
+        "value": "Gujarat"
+    }, {
+        "id": "AN",
+        "value": "Andaman and Nicobar Islands"
+    }, {
+        "id": "CH",
+        "value": "Chandigarh"
+    }, {
+        "id": "MN",
+        "value": "Manipur"
+    }, {
+        "id": "OR",
+        "value": "Odisha"
+    }]
+}]

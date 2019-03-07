@@ -1,0 +1,346 @@
+$body-background-color: #010008;
+$jungle-green: #00733e;
+$drop-down: rgba(26, 26, 26, 0.9);
+$filter-field: #494949;
+$collapsible-panel: #131313;
+$filter-field-active: #000000;
+$cherry-red: #f50021;
+$drop-down-text: #ffffff;
+$drop-down-openbg: #171717;
+$dropdown-select-text: #616161;
+$drop-down-label: #ababab;
+
+@mixin respond-to($breakpoint) {
+    @if $breakpoint=="x-small" {
+        @media (max-width: 561px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint=="small" {
+        @media (min-width: 640px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint=="medium" {
+        @media (min-width: 767px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint=="large" {
+        @media (min-width: 992px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint=="x-large" {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+}
+
+body {
+    margin: auto;
+    //font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+
+    .main-container {
+        display: flex;
+        height: 100vh;
+        .filter-container {
+            width: 210px;
+            padding: 20px 10px;
+            height: 100vh;
+            background: $body-background-color;
+            position: relative;
+            z-index: 1;
+            @include respond-to(x-small) {
+                width: 100%;
+            }
+
+            .expand-collapse {
+                position: absolute;
+                bottom: 50px;
+                background: #004694;
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                text-align: center;
+                right: -15px;
+                color: $drop-down-text;
+                cursor: pointer;
+
+                &:after {
+                    content: '✓';
+                    margin: 0;
+                    position: absolute;
+                    transform: translate(-50%, 25%);
+                }
+            }
+        }
+
+        #map {
+            width: calc(100% - 210px);
+
+            @include respond-to(x-small) {
+                width: 100%;
+            }
+
+            height: 100%;
+
+            /* This is where you plug in the CSS for marker animations */
+            #markerLayer img {
+                animation: pulse .5s infinite alternate;
+                -webkit-animation: pulse .5s infinite alternate;
+                transform-origin: center;
+                -webkit-transform-origin: center;
+            }
+        }
+    }
+}
+
+/* Animaitons */
+@keyframes pulse {
+    to {
+        transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+    }
+}
+
+@-webkit-keyframes pulse {
+    to {
+        transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+    }
+}
+
+.logo {
+    margin: 0 0 40px 0;
+
+    img {
+        max-width: 120px;
+    }
+}
+
+.drop-outer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+}
+
+.dropdown-outer {
+    label {
+        text-transform: uppercase;
+        color: $drop-down-label;
+        font-weight: 100;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+    }
+
+    .time,
+    .region,
+    .topic {
+        &:before {
+            content: '';
+            width: 18px;
+            height: 20px;
+        }
+    }
+}
+
+.custom-dropdown {
+    min-width: 180px;
+
+    @include respond-to(x-small) {
+        min-width: 100%;
+    }
+
+    text-align: left;
+    position: relative;
+    margin-bottom: 40px;
+    background-color: $collapsible-panel;
+    color: $drop-down-text;
+
+    &:hover {
+        color: $drop-down-text;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    &::after {
+        margin: 0;
+        position: absolute;
+        transform: translate(-50%, -0%);
+        right: 10px;
+        top: 50%;
+    }
+}
+
+.dropdown-menu {
+    background-color: $drop-down-openbg;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    width: 180px;
+    height: 250px;
+    overflow-y: auto;
+    @include respond-to(x-small) {
+        min-width: 100%;
+    }
+
+    transform: translate3d(0px, 35px, 0px) !important;
+
+    .dropdown-item {
+        color: $drop-down-text;
+        padding: 10px 20px;
+        position: relative;
+
+        &:hover {
+            background: $jungle-green;
+
+            &:after {
+                content: '✓';
+                position: absolute;
+                right: 5px;
+                top: 32%;
+                transform: translate(-32%, 0%);
+            }
+        }
+    }
+
+    .selected {
+        &:after {
+            content: '✓';
+            position: absolute;
+            right: 5px;
+            top: 32%;
+            transform: translate(-32%, 0%);
+        }
+    }
+}
+
+.dropdown.show {
+    .custom-dropdown {
+        background: transparent;
+        color: $dropdown-select-text;
+
+        &::after {
+            color: $drop-down-text;
+            transform: rotate(180deg);
+            transition: cubic-bezier(0.45, 0.05, 0.55, 0.95) .2s;
+            right: 15px;
+        }
+    }
+}
+
+/* main styles */
+.switch {
+    width: 24rem;
+    position: relative;
+
+    input {
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        opacity: 0;
+        cursor: pointer;
+
+        &:checked {
+            z-index: 1;
+        }
+
+        &:checked+label {
+            opacity: 1;
+            cursor: default;
+            color: $jungle-green;
+        }
+
+        &:not(:checked)+label:hover {
+            opacity: 0.5;
+        }
+    }
+
+    label {
+        color: $drop-down-label;
+        opacity: 0.85;
+        transition: opacity 0.25s ease;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
+    .toggle-outside {
+        height: 5px;
+        border-radius: 2rem;
+        padding: 0.25rem;
+        overflow: visible;
+        transition: 0.25s ease all;
+    }
+
+    .toggle-inside {
+        border-radius: 5rem;
+        background: $jungle-green;
+        position: absolute;
+        transition: 0.25s ease all;
+        top: -4px;
+    }
+}
+
+.switch--horizontal {
+    width: 180px;
+    font-size: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+
+    input {
+        margin: 0;
+
+        &:checked~.toggle-outside {
+            .toggle-inside {
+                left: -4px;
+            }
+        }
+    }
+
+    input~input:checked~.toggle-outside {
+        .toggle-inside {
+            left: 12px;
+        }
+    }
+
+    label {
+        font-size: 12px;
+        display: inline-block;
+        margin: 0;
+        text-align: center;
+
+        &:last-of-type {
+            margin-left: 45px;
+        }
+    }
+
+    .toggle-outside {
+        background: $drop-down-text;
+        position: absolute;
+        width: 25px;
+        left: 52px;
+        top: 3px;
+    }
+
+    .toggle-inside {
+        height: 15px;
+        width: 15px;
+    }
+}
